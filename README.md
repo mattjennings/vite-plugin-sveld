@@ -48,3 +48,13 @@ import docs from './Button.svelte?raw&sveld'
 	</tbody>
 </table>
 ```
+
+## ?raw&sveld types
+
+If you'd like to have the sveld imports typed, add
+
+```
+/// <reference types="vite-plugin-sveld" />
+```
+
+to a `src/global.d.ts` file or similar in your project. Imports _must_ have `?raw&sveld` specifically to be typed. Adding additional query params, or flipping to `?sveld&raw` will cause them to be untyped.

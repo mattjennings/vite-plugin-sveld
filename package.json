@@ -1,6 +1,7 @@
 {
   "name": "vite-plugin-sveld",
-  "version": "1.0.1",
+  "version": "1.0.2",
+  "types": "types.d.ts",
   "description": "A vite plugin to parse your Svelte components through sveld",
   "repository": {
     "type": "git",
