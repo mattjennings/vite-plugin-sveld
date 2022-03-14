@@ -40,7 +40,7 @@ declare module "*.svelte?raw&sveld" {
     name: string;
   }
 
-  interface SveldTypdefs {
+  interface SveldTypedefs {
     type: string;
     name: string;
     ts: string;
