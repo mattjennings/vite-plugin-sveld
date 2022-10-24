@@ -5,7 +5,7 @@ A vite plugin to parse your Svelte components through [sveld](https://github.com
 ## Setup
 
 ```
-npm install vite-plugin-sveld
+npm install -D vite-plugin-sveld sveld
 ```
 
 ```js
