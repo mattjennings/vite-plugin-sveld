@@ -15,9 +15,10 @@ declare module "*.svelte?raw&sveld" {
   interface SveldProp {
     name: string;
     kind: string;
-    type: string;
+    type?: string;
     isFunction: boolean;
     isFunctionDeclaration: boolean;
+    isRequired: boolean;
     constant: boolean;
     reactive: boolean;
   }
@@ -27,12 +28,14 @@ declare module "*.svelte?raw&sveld" {
     default: boolean;
     fallback: string;
     slot_props: string;
+    description?: string
   }
 
   interface SveldEvent {
     type: string;
     name: string;
     element: string;
+    description?: string
   }
 
   interface SveldRestProps {
@@ -46,13 +49,33 @@ declare module "*.svelte?raw&sveld" {
     ts: string;
   }
 
+  interface SveldModuleExport {
+    name: string
+    kind: string
+    type?: string
+    value: string
+    isFunction: boolean
+    isFunctionDeclaration: boolean
+    isRequired: boolean
+    constant: boolean
+    reactive: boolean
+  }
+  
   interface SveldJson {
     props: SveldProp[];
     slots: SveldSlot[];
     events: SveldEvent[];
     typedefs: SveldTypedefs[];
     rest_props: SveldRestProps[];
+    moduleExports: SveldModuleExport[]
+    componentComment?: string
+    extends?: {
+      interface: string
+      import: string
+    }
   }
+
+
 
   const json: SveldJson;
 

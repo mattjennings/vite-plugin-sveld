@@ -1,0 +1,18 @@
+{
+  "name": "playground",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^1.0.2",
+    "vite-plugin-sveld": "file:../",
+    "svelte": "^3.49.0",
+    "sveld": "^0.18.0",
+    "vite": "^3.1.0"
+  }
+}
