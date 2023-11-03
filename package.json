@@ -16,16 +16,16 @@
   "license": "ISC",
   "type": "module",
   "peerDependencies": {
-    "svelte": "^3.0.0",
-    "sveld": "^0.18.0"
+    "svelte": "^4.2.2",
+    "sveld": "^0.19.1"
   },
   "devDependencies": {
-    "svelte": "^3.38.3",
-    "sveld": "^0.18.0"
+    "svelte": "^4.2.2",
+    "sveld": "^0.19.1"
   },
   "dependencies": {
-    "query-string": "^7.0.1",    
-    "svelte-preprocess": "^4.10.7"
+    "query-string": "^8.1.0",
+    "svelte-preprocess": "^5.0.4"
   },
   "exports": {
     ".": "./index.js"
