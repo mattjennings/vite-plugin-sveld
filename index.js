@@ -1,9 +1,12 @@
-import { ComponentParser } from 'sveld'
-import sveltePreprocess from 'svelte-preprocess'
+import * as sveld from 'sveld'
 import * as svelte from 'svelte/compiler'
+import sveltePreprocess from 'svelte-preprocess'
 import qs from 'query-string'
 
-export default function sveld() {
+const { ComponentParser } = sveld.default
+
+
+export default function sveldPlugin() {
 	return {
 		name: 'vite-plugin-sveld',
 		async transform(src, id) {

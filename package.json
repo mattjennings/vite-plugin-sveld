@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-sveld",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "types": "types.d.ts",
   "description": "A vite plugin to parse your Svelte components through sveld",
   "repository": {
@@ -16,16 +16,16 @@
   "license": "ISC",
   "type": "module",
   "peerDependencies": {
-    "svelte": "^3.0.0",
-    "sveld": "^0.18.0"
+    "svelte": ">=4.0.0",
+    "sveld": ">=0.20.0"
   },
   "devDependencies": {
-    "svelte": "^3.38.3",
-    "sveld": "^0.18.0"
+    "svelte": "^4.2.19",
+    "sveld": "^0.20.2"
   },
   "dependencies": {
-    "query-string": "^7.0.1",    
-    "svelte-preprocess": "^4.10.7"
+    "query-string": "^9.1.1",    
+    "svelte-preprocess": "^6.0.3"
   },
   "exports": {
     ".": "./index.js"
